@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
@@ -9,9 +9,9 @@ import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import { Heart, HelpCircle, Home, Mail, Search, Shield, Star, Zap } from "lucide-react";
+import { Heart, HelpCircle, Mail, Search, Shield, Star, Zap } from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <ThemeProvider
       defaultButtonVariant="text-stagger"
@@ -39,7 +39,7 @@ export default function Home() {
           title="Find Your Perfect Rental Home"
           description="Discover unique properties and unforgettable stays. From cozy apartments to luxury villas, find accommodations that feel like home."
           tag="Book Now"
-          tagIcon={Home}
+          tagIcon={Star}
           buttons={[
             { text: "Explore Properties", href: "properties" },
             { text: "List Your Property", href: "contact" }
